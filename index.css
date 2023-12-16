@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("static/background.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post {
+    margin-top: 1em;
+    background-color: rgbA(103, 109, 109, 0.2);
+    text-align: center;
+    color: rgb(180, 72, 22);
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    word-break: normal;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.postTitle {
+    color: rgb(180, 72, 22);
+    font-weight: bold;
+    background-color: rgba(22, 24, 26, 0.144);
+    border-radius: 12px;
+    padding: 5px;
+    text-decoration: red;
+    transition: 700ms;
+    width: 80%;
+    margin: auto;
+}
+
+a,
+p,
+h1 {
+    color: rgb(223, 63, 22);
+}
+
+.postTitle:hover {
+    background-color: rgba(147, 157, 163, 0.7);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transition-property: background-color;
+    transition: 500ms;
+}
+
+.title {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgba(194, 43, 6, 0.603);
+    font-size: 50px;
+    width: 80%;
+}
+
+.comment {
+    margin: 30px;
+    text-align: start;
+    background-color: rgbA(103, 109, 109, 0.4);
+    padding: 30px;
+    color: white;
+}
+
+.by {
+    margin-right: 60%;
+    color: rgb(180, 72, 22);
+}
+
+.time {
+    text-align: end;
+    margin-right: 3%;
+    color: rgb(180, 72, 22);
+}
+
